@@ -1,0 +1,262 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar {
+  width: 100%;
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  color: #f0c674;
+}
+
+
+.main {
+  flex: 1; /* isi sisa ruang */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 60px;
+}
+
+
+body.LoginPage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow: hidden;
+  background: #111;
+  font-family: fantasy;
+}
+
+body.LoginPage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url('../src/tara-arts1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: -1;
+
+  animation: zoomBg 10s ease-in-out infinite;
+}
+
+.LoginContainer {
+  width: 500px;
+  height: 600px;
+  padding: 40px;
+  margin: 50px;
+
+  background: rgba(204, 145, 89, 0.8);
+  border-radius: 8px;
+  box-shadow: 0px 10px 40px rgba(0,0,0,0.5);
+  z-index: 1;
+  
+}
+
+.LoginContainer h1 {
+  text-align: center;
+  margin-bottom: 60px;
+  text-shadow: 10px 10px 30px #463c3c;
+  font-weight: 900;
+  color:#1f1f1f
+}
+
+.LoginContainer input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  background-color: rgb(204, 179, 155);
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #333;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #525050;
+}
+
+
+@keyframes zoomBg {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+body.RegisterPage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow: hidden;
+  background: #111;
+  font-family: fantasy;
+}
+
+body.RegisterPage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url('../src/tara-arts3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: -1;
+
+  animation: zoomBg 10s ease-in-out infinite;
+}
+
+.RegisterContainer {
+  width: 500px;
+  height: 600px;
+  padding: 40px;
+  margin: 50px;
+
+  background: rgba(204, 145, 89, 0.8);
+  border-radius: 8px;
+  box-shadow: 0px 10px 40px rgba(0,0,0,0.5);
+  z-index: 1;
+  
+}
+
+.RegisterContainer h1 {
+  text-align: center;
+  margin-bottom: 60px;
+  text-shadow: 10px 10px 30px #463c3c;
+  font-weight: 900;
+  color:#1f1f1f
+}
+
+.RegisterContainer input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  background-color: rgb(204, 179, 155);
+}
+
+
+body.DashboardPage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow: hidden;
+  background: #111;
+  font-family: fantasy;
+}
+
+
+.PictureContainer {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.Picture {
+    background-color: white;
+    color: black;
+    width: 330px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: fadeIn 1s ease-in-out;
+    transition: 0.5s;
+}
+
+.Picture:hover {
+    transform: translateY(-10px);
+    background-color: rgb(156, 155, 155);
+    color: gold;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateX(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.Picture img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
